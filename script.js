@@ -1,6 +1,5 @@
 // api url
 const api_url = "https://hamid-news-api.herokuapp.com/news";
-const api_url2 = "http://127.0.0.1:8000/src";
 
 // Defining async function
 async function getapi(url) {
