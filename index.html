@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oman News</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Oman News In Card</h1>
+      <p>dont miss any news anymore!</p>
+    </div>
+
+    <!-- tab -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">
+        TOM News
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent" style="display: block">
+      <!-- <h3>TOM News</h3> -->
+      <div class="container" id="employees">
+        <div class="card">
+          <div class="card__header">
+            <img
+              src="https://source.unsplash.com/600x400/?computer"
+              alt="card__image"
+              class="card__image"
+              width="600"
+            />
+          </div>
+          <div class="card__body">
+            <span class="tag tag-blue">Technology</span>
+            <h4>What's new in 2022 Tech</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
+              atque quidem!
+            </p>
+          </div>
+          <!-- <div class="card__footer">
+          <div class="user">
+            <img
+              src="https://i.pravatar.cc/40?img=1"
+              alt="user__image"
+              class="user__image"
+            />
+            <div class="user__info">
+              <h5>Jane Doe</h5>
+              <small>2h ago</small>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+      <!-- partial -->
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <!-- partial:index.partial.html -->
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
