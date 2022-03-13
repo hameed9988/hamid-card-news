@@ -1,0 +1,24 @@
+{
+  "name": "hamid-card-news",
+  "version": "1.0.0",
+  "description": "news in card ",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hameed9988/hamid-card-news.git"
+  },
+  "author": "Abdul Hamid Al kharusi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hameed9988/hamid-card-news/issues"
+  },
+  "homepage": "https://github.com/hameed9988/hamid-card-news#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.3",
+    "nodemon": "^2.0.15"
+  }
+}

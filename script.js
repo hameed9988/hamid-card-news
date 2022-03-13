@@ -12,7 +12,7 @@ async function getapi(url) {
   show(data);
 }
 // Calling that async function
-getapi(api_url, api_url2);
+getapi(api_url);
 // Function to define innerHTML for HTML table
 function show(data) {
   let tab = ``;
